@@ -5,18 +5,18 @@
 </p>
 
 <p align="center">
-  <img alt="Quality Gate" src="https://img.shields.io/badge/Quality%20Gate-setup%20required-lightgrey">
-  <img alt="Link Integrity" src="https://img.shields.io/badge/Link%20Integrity-setup%20required-lightgrey">
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-yellow"></a>
+  <a href="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml">
+    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main">
+  </a>
+  <a href="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml">
+    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main">
+  </a>
+  <a href="LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow">
+  </a>
   <img alt="Repo Type" src="https://img.shields.io/badge/Repo%20Type-documentation--first-informational">
   <img alt="Standards" src="https://img.shields.io/badge/Standards-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-informational">
 </p>
-
-<!--
-After pushing to GitHub, replace the two setup badges above with workflow badges:
-
-[![Quality Gate](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml)
-[![Link Integrity](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml)
 
 -->
 

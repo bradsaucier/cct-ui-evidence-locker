@@ -33,6 +33,7 @@ After pushing to GitHub, replace the two setup badges above with workflow badges
 </p>
 
 ---
+
 ## Mission Abstract
 
 SafeHaven is a caregiver safety concept for dementia support. The UI prioritizes situational awareness and speed to action for two time-critical hazards: wandering outside a safe boundary and a stove left on long enough to create fire risk.

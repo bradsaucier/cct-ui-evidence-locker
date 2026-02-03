@@ -227,5 +227,3 @@ cs319-safehaven-mission-assurance/
 This repository contains coursework artifacts produced for SNHU CS-319 and repackaged for portfolio review. All work is my own.
 
 If any portion is reused, cite the repository and distinguish original content from derived material.
-
-Badge note - If you publish under a different GitHub user or repository name, update the badge URLs at the top of this README.

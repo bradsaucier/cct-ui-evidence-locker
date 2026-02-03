@@ -15,8 +15,9 @@
 <!--
 After pushing to GitHub, replace the two setup badges above with workflow badges:
 
-[![Quality Gate](https://github.com/<OWNER>/<REPO>/actions/workflows/quality.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/quality.yml)
-[![Link Integrity](https://github.com/<OWNER>/<REPO>/actions/workflows/links.yml/badge.svg)](https://github.com/<OWNER>/<REPO>/actions/workflows/links.yml)
+[![Quality Gate](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main)](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml)
+[![Link Integrity](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml)
+
 -->
 
 <p align="center">

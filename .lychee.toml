@@ -1,0 +1,14 @@
+# Lychee configuration for portfolio repositories
+exclude = [
+  "mailto:",
+  "tel:"
+]
+
+accept = [200, 206, 429]
+max_concurrency = 8
+timeout = 20
+insecure = false
+
+exclude_path = [
+  "submissions"
+]

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SafeHaven - Closed Loop Mock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hdr">
+      <h1>SafeHaven - Closed Loop Mock</h1>
+      <p>Purpose - Demonstrate pending, verified, and fault states for a remote shutoff command.</p>
+    </header>
+
+    <section class="card">
+      <h2>Stove Risk Alert (Mock)</h2>
+      <div class="row">
+        <div class="label">Status</div>
+        <div id="status" class="status status-critical">CRITICAL</div>
+      </div>
+      <div class="row">
+        <div class="label">Condition</div>
+        <div class="value">STOVE ON - 60 minutes</div>
+      </div>
+      <div class="row">
+        <div class="label">Context</div>
+        <div class="value">NO MOTION DETECTED - 10:12 am</div>
+      </div>
+
+      <div class="row">
+        <button id="holdBtn" class="btn btn-critical" type="button">EMERGENCY SHUTOFF (PRESS AND HOLD)</button>
+      </div>
+
+      <div class="row">
+        <div class="label">Command state</div>
+        <div id="cmdState" class="value">Idle</div>
+      </div>
+
+      <div class="row">
+        <div class="meter">
+          <div id="meterFill" class="meter-fill" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="retryBtn" class="btn btn-secondary" type="button" disabled>Retry</button>
+        <button id="resetBtn" class="btn btn-secondary" type="button">Reset</button>
+      </div>
+
+      <p class="note">This mock is illustrative. It is not a production implementation.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

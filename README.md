@@ -18,8 +18,6 @@
   <img alt="Standards" src="https://img.shields.io/badge/Standards-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-informational">
 </p>
 
--->
-
 <p align="center">
   <a href="#mission-abstract">Mission Abstract</a> |
   <a href="#triage-rapid-assessment">Triage</a> |

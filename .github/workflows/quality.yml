@@ -21,7 +21,9 @@ jobs:
       - name: "Markdown Lint"
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
-          globs: "**/*.md"
+          globs: |
+            **/*.md
+            !.github/ISSUE_TEMPLATE/*.md
 
       - name: "Spell Check"
         uses: streetsidesoftware/cspell-action@v6

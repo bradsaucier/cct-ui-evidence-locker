@@ -1,28 +1,61 @@
-# CS-319 UI-UX Evidence Locker - SafeHaven (Project One) and Kiva (Project Two)
+# CS-319 UI-UX Evidence Locker
+SafeHaven (Project One) and Kiva (Project Two)
 
-<p align="center">
-  <img src="assets/img/cover.png" alt="SafeHaven wireframes and operational dashboard" width="1000">
+<p align="left">
+  <img src="assets/img/cover.png" alt="CS-319 UI-UX Evidence Locker cover image" width="100%">
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml">
-    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main">
+    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml/badge.svg">
   </a>
   <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml">
-    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main">
+    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml/badge.svg">
   </a>
-  <a href="LICENSE">
-    <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow">
-  </a>
-  <img alt="Repo Type" src="https://img.shields.io/badge/Repo%20Type-documentation--first-informational">
-  <img alt="Design Doctrine" src="https://img.shields.io/badge/Design%20Doctrine-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-informational">
+  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-black">
+  <img alt="Repo Type documentation-first" src="https://img.shields.io/badge/Repo%20Type-documentation--first-blue">
+  <img alt="Design Doctrine WCAG 2.2 HIG Material 3" src="https://img.shields.io/badge/Design%20Doctrine-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-gray">
 </p>
 
-SafeHaven is a caregiver safety concept for dementia support. The high-consequence scenarios are a wandering event beyond a safe boundary and a stove left on long enough to create fire risk.
+> [!IMPORTANT]
+> **BOTTOM LINE UP FRONT**
+> This repository is a documentation-first evidence locker for two UI-UX problem sets.
+>
+> Scope:
+> 1. SafeHaven - safety-critical caregiver UI under stress and time pressure.
+> 2. Kiva - austere embedded USSD borrower flow plus cloud lender view under cost discipline.
+>
+> Standards:
+> 1. Make constraints explicit.
+> 2. Label estimates as estimates ("EST") end-to-end.
+> 3. Maintain traceability from operational need to artifact.
 
-Kiva is a dual-interface concept where a borrower uses an embedded USSD workflow under low bandwidth and session timeouts, while a lender uses a cloud dashboard for discovery and forecasting under nonprofit cost discipline.
+## Contents
 
-This repository is a documentation-first evidence locker for SNHU CS-319. It consolidates wireframes, requirements, risk assessment, and platform adaptation into an auditable briefing package.
+1. Project One - SafeHaven
+   1. Evidence index: [evidence/03_ops_design/project_one_safehaven/](evidence/03_ops_design/project_one_safehaven/)
+   2. Wireframes: [assets/img/wireframes/](assets/img/wireframes/)
+   3. Prototype (POC): [src/prototypes/](src/prototypes/)
+   4. Submission artifacts: [SUBMISSIONS.md](SUBMISSIONS.md)
+
+2. Project Two - Kiva
+   1. Evidence index: [evidence/03_ops_design/project_two_kiva/](evidence/03_ops_design/project_two_kiva/)
+   2. Borrower USSD wireframe: [assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png](assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png)
+   3. Report (PDF): [submissions/CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf)
+
+3. Verification and controls
+   1. Traceability: [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md)
+   2. Definitions: [evidence/02_mission_reqs/definitions.md](evidence/02_mission_reqs/definitions.md)
+   3. Risk register: [evidence/02_mission_reqs/risk_register.md](evidence/02_mission_reqs/risk_register.md)
+   4. Citation metadata: [CITATION.cff](CITATION.cff)
+
+## Summary
+
+SafeHaven addresses safety-critical UI decisions where operator error can amplify risk (wandering beyond a boundary and stove fire scenarios). The design emphasizes status clarity and closed-loop confirmation.
+
+Kiva addresses austere, time-bounded interaction where bandwidth and session timeouts drive UI architecture. The borrower view prioritizes critical data on entry and uses estimate labeling ("EST") when confirmed transaction history is unavailable.
+
+This repository consolidates wireframes, requirements, definitions, traceability, and risk controls into an auditable briefing package.
 
 ---
 

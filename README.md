@@ -1,17 +1,17 @@
 # CS-319 UI-UX Evidence Locker
 
-SafeHaven (Project One) and Kiva (Project Two)
+SafeHaven (Project One) - Kiva (Project Two)
 
 <p align="left">
-  <img src="assets/img/cover.png" alt="CS-319 UI-UX Evidence Locker cover image" width="100%">
+  <img src="assets/img/cover.png" alt="CS-319 UI-UX Evidence Locker - SafeHaven caregiver safety and Kiva microfinance USSD design" width="100%">
 </p>
 
 <p align="left">
   <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml">
-    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml/badge.svg">
+    <img alt="Quality Gate - Markdown lint and spell check" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml/badge.svg">
   </a>
   <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml">
-    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml/badge.svg">
+    <img alt="Link Integrity - dead link detection on every push" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml/badge.svg">
   </a>
   <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-black">
   <img alt="Repo Type documentation-first" src="https://img.shields.io/badge/Repo%20Type-documentation--first-blue">
@@ -20,107 +20,222 @@ SafeHaven (Project One) and Kiva (Project Two)
 
 > [!IMPORTANT]
 > **BOTTOM LINE UP FRONT**
-> This repository is a documentation-first evidence locker for two UI-UX problem sets.
 >
-> Scope:
+> Documentation-first evidence locker for two UI-UX problem sets built for constrained, high-consequence environments.
 >
-> 1. SafeHaven - safety-critical caregiver UI under stress and time pressure.
-> 2. Kiva - austere embedded USSD borrower flow plus cloud lender view under cost discipline.
+> 1. **SafeHaven** - safety-critical caregiver UI under stress and time pressure.
+> 2. **Kiva** - austere USSD borrower flow plus cloud lender dashboard under cost discipline.
 >
-> Standards:
->
-> 1. Make constraints explicit.
-> 2. Label estimates as estimates ("EST") end-to-end.
-> 3. Maintain traceability from operational need to artifact.
+> Standards: constraints explicit, estimates labeled "EST", traceability from operational need to artifact.
 
-## Contents
+---
 
-1. Project One - SafeHaven
-   1. Evidence index: [evidence/03_ops_design/project_one_safehaven/](evidence/03_ops_design/project_one_safehaven/)
-   2. Wireframes: [assets/img/wireframes/](assets/img/wireframes/)
-   3. Prototype (POC): [src/prototypes/](src/prototypes/)
-   4. Submission artifacts: [SUBMISSIONS.md](SUBMISSIONS.md)
+## Mission brief
 
-2. Project Two - Kiva
-   1. Evidence index: [evidence/03_ops_design/project_two_kiva/](evidence/03_ops_design/project_two_kiva/)
-   2. Wireframe: [assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png](assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png)
-   3. Written report (PDF): [submissions/CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf)
-   4. Requirements (Kiva): [evidence/02_mission_reqs/requirements_kiva.md](evidence/02_mission_reqs/requirements_kiva.md)
+| Parameter | Operational data |
+| --- | --- |
+| Purpose | Reduce evaluator friction. One-click access to primary artifacts. |
+| Doctrine | Evidence locker - verifiable claims, traceability, managed risk. |
+| Primary deliverables | Wireframes, requirements, risk register, traceability matrix, PDFs, prototype. |
+| Prototype | Static HTML proof of concept (open locally). |
+| Verification | CI checks: markdown lint, spell check, link integrity. |
 
-3. Program controls
-   1. Traceability: [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md)
-   2. Risk register: [evidence/02_mission_reqs/risk_register.md](evidence/02_mission_reqs/risk_register.md)
-   3. Definitions: [evidence/02_mission_reqs/definitions.md](evidence/02_mission_reqs/definitions.md)
-   4. Citation: [CITATION.cff](CITATION.cff)
-   5. Security policy: [SECURITY.md](SECURITY.md)
+---
 
-## Operational context
+## Key artifacts
 
-SafeHaven is a caregiver safety concept for dementia support. The design focuses on high-consequence scenarios (wandering beyond a safe boundary and stove fire risk) and mitigates operator error through status clarity and closed-loop confirmation.
+| Artifact | Type | Link |
+| --- | --- | --- |
+| SafeHaven submission | PDF | [CS319_Project_One_Submission.pdf](submissions/CS319_Project_One_Submission.pdf) |
+| Kiva written report | PDF | [CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf) |
+| SafeHaven prototype (entry point) | HTML | [safehaven-ui-mock.html](src/prototypes/safehaven-ui-mock.html) - open locally in a browser |
+| SafeHaven wireframes (4 screens) | PNG | [assets/img/wireframes/](assets/img/wireframes/) |
+| Kiva USSD wireframe | PNG | [kiva_borrower_ussd_wireframe.png](assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png) |
+| Traceability matrix | Markdown | [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) |
+| Risk register | Markdown | [risk_register.md](evidence/02_mission_reqs/risk_register.md) |
 
-Kiva is a dual-interface concept where a borrower uses an embedded USSD workflow under low bandwidth and session timeouts, while a lender uses a cloud dashboard for discovery and forecasting under nonprofit cost discipline.
+---
 
-This repo consolidates wireframes, requirements, definitions, traceability, and risk controls into an auditable briefing package.
+## Wireframe previews
 
-## Evidence structure
+<table>
+<tr>
+<td width="50%" valign="top">
 
-This repository uses a documentation-first layout:
+**SafeHaven - Home Status Dashboard**
 
-- evidence/01_intel_research - user needs, context, and constraints
-- evidence/02_mission_reqs - requirements, definitions, risk controls
-- evidence/03_ops_design - project evidence packages (SafeHaven and Kiva)
-- evidence/04_after_action - after action review and improvement deltas
-- assets/img - cover and wireframe assets
-- src/prototypes - interactive mock (SafeHaven proof of concept)
+<img src="assets/img/wireframes/home_status_dashboard.png" alt="SafeHaven home status dashboard wireframe showing three-state status model for caregiver at-a-glance awareness" width="100%">
 
-## Project One - SafeHaven (safety-critical caregiver UI)
+</td>
+<td width="50%" valign="top">
 
-Operational hazards addressed:
+**Kiva - Borrower USSD Flow**
 
-- Wandering beyond a safe boundary
-- Stove left on long enough to create fire risk
+<img src="assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png" alt="Kiva borrower USSD wireframe showing flat menu flow with numeric input and 0-exit for shared device privacy" width="100%">
 
-Design controls used:
+</td>
+</tr>
+</table>
 
-- Three-state status model to reduce cognitive load
-- Closed-loop confirmations for high-impact actions
-- Role separation (primary vs backup contacts) for escalation clarity
+---
 
-Evidence package:
+## Project One - SafeHaven
 
-- Wireframes and rationale: evidence/03_ops_design/project_one_safehaven/
-- Prototype (POC): src/prototypes/
+Safety-critical caregiver UI concept for dementia support. The operating environment is a home under stress, where the operator may be sleep-deprived and time-compressed. The interface must reduce cognitive load and prevent errors during escalation.
 
-## Project Two - Kiva (austere embedded + cloud)
+**Hazards and controls**
 
-Operational constraints addressed:
+| Hazard | Control measure | Evidence |
+| --- | --- | --- |
+| Wandering beyond a safe boundary | Three-state status model + rapid alert affordances | [wireframes.md](evidence/03_ops_design/project_one_safehaven/wireframes.md) |
+| Stove left on long enough to create fire risk | Closed-loop confirmations for high-impact actions | [design_rationale_from_submission.md](evidence/03_ops_design/project_one_safehaven/design_rationale_from_submission.md) |
+| Lock-screen privacy during alerts | Non-descriptive notification pattern | [notification_privacy_policy.md](evidence/02_mission_reqs/notification_privacy_policy.md) |
 
-- USSD session timeouts and limited character budget
-- Numeric-only input and error-prone keypad entry
-- Shared-device privacy requirements
-- Cost discipline for nonprofit analytics workloads
+**Evidence package**
 
-Design doctrine:
+| Item | Link |
+| --- | --- |
+| Design rationale | [design_rationale_from_submission.md](evidence/03_ops_design/project_one_safehaven/design_rationale_from_submission.md) |
+| Tactical critique | [critique.md](evidence/03_ops_design/project_one_safehaven/critique.md) |
+| Platform adaptation | [platform_adaptation.md](evidence/03_ops_design/project_one_safehaven/platform_adaptation.md) |
+| Wireframe index | [wireframes.md](evidence/03_ops_design/project_one_safehaven/wireframes.md) |
+| Requirements | [requirements.md](evidence/02_mission_reqs/requirements.md) |
+| User needs | [user_needs_summary.md](evidence/01_intel_research/user_needs_summary.md) |
+| Prototype (open locally) | [safehaven-ui-mock.html](src/prototypes/safehaven-ui-mock.html) |
 
-- Flat and fast menu flow to reduce timeout risk
-- "EST" labeling on derived values to prevent false precision
-- "0 Exit" for privacy on shared devices
+---
 
-Evidence package:
+## Project Two - Kiva
 
-- Design brief: evidence/03_ops_design/project_two_kiva/README.md
-- Wireframe: assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png
-- Report: submissions/CS319_Project_Two_Report.pdf
+Dual-interface concept: austere USSD borrower flow under low bandwidth and session timeouts, plus a cloud lender dashboard for discovery and forecasting.
 
-## Verification posture
+**Constraints and doctrine**
 
-Automated checks run on every push and pull request:
+| Constraint | Design doctrine | Evidence |
+| --- | --- | --- |
+| USSD timeouts and character budget | Flat and fast menu flow to reduce timeout risk | [README.md](evidence/03_ops_design/project_two_kiva/README.md) |
+| Numeric-only input, error-prone keypad | Input minimization, clear validation messaging | [requirements_kiva.md](evidence/02_mission_reqs/requirements_kiva.md) |
+| Shared-device privacy | "0 Exit" pattern to terminate session quickly | [README.md](evidence/03_ops_design/project_two_kiva/README.md) |
+| Forecast volatility | Label derived values as "EST" to prevent false precision | [requirements_kiva.md](evidence/02_mission_reqs/requirements_kiva.md) |
 
-- Markdown lint (format discipline)
-- Spell check (terminology discipline)
-- Link integrity (rot detection)
+**Evidence package**
+
+| Item | Link |
+| --- | --- |
+| Design brief | [README.md](evidence/03_ops_design/project_two_kiva/README.md) |
+| Requirements | [requirements_kiva.md](evidence/02_mission_reqs/requirements_kiva.md) |
+| User needs | [kiva_user_needs_summary.md](evidence/01_intel_research/kiva_user_needs_summary.md) |
+| Wireframe | [kiva_borrower_ussd_wireframe.png](assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png) |
+| Written report (PDF) | [CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf) |
+
+---
+
+## Run the prototype
+
+1. Open: [src/prototypes/safehaven-ui-mock.html](src/prototypes/safehaven-ui-mock.html)
+2. Launch it locally (double-click or open with your browser).
+3. Optional: review implementation notes in [src/prototypes/README.md](src/prototypes/README.md)
+
+---
+
+## Known limitations
+
+- Prototype is static HTML and illustrates interaction design intent. It is not wired to production services.
+- Kiva USSD flow is a design artifact. Carrier gateway integration is out of scope for this repository.
+
+---
+
+## Verification
+
+> [!TIP]
+> Automated checks run on every push and pull request. Badges at the top of this page reflect current status.
+
+| Check | What it catches |
+| --- | --- |
+| Markdown lint | Format and heading discipline |
+| Spell check | Terminology consistency |
+| Link integrity (lychee) | Broken internal and external links |
 
 If Link Integrity fails on a known rate-limited badge provider, the lychee configuration excludes that domain to keep checks focused on content links.
+
+---
+
+<details>
+<summary><strong>Full evidence index</strong> (expand for complete directory map)</summary>
+
+### Evidence structure
+
+```text
+evidence/
+  01_intel_research/               User needs and problem framing
+    user_needs_summary.md          SafeHaven user needs
+    kiva_user_needs_summary.md     Kiva user needs
+  02_mission_reqs/                 Requirements, definitions, risk controls
+    requirements.md                SafeHaven requirements
+    requirements_kiva.md           Kiva requirements
+    definitions.md                 Term definitions
+    risk_register.md               Risk register (both projects)
+    notification_privacy_policy.md SafeHaven notification privacy
+  03_ops_design/                   Project evidence packages
+    project_one_safehaven/         SafeHaven design evidence
+      critique.md
+      design_rationale_from_submission.md
+      platform_adaptation.md
+      wireframes.md
+    project_two_kiva/              Kiva design evidence
+      README.md
+  04_after_action/                 Iteration and review
+    after_action_review.md
+```
+
+### Wireframe assets
+
+```text
+assets/img/wireframes/
+  care_circle_setup.png            SafeHaven care circle setup screen
+  home_status_dashboard.png        SafeHaven three-state dashboard
+  stove_risk_alert.png             SafeHaven stove fire alert screen
+  wandering_alert.png              SafeHaven wandering alert screen
+  kiva/
+    kiva_borrower_ussd_wireframe.png  Kiva USSD borrower flow
+```
+
+### Prototype files
+
+```text
+src/prototypes/
+  safehaven-ui-mock.html           Entry point - open in browser
+  app.js                           State management logic
+  styles.css                       Presentation layer
+  README.md                        Prototype instructions
+```
+
+### Design system
+
+```text
+design_system/
+  tokens.json                      Design token values
+  tokens.md                        Token documentation
+```
+
+</details>
+
+---
+
+## Program controls
+
+| Control | Link |
+| --- | --- |
+| Traceability matrix | [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) |
+| Risk register | [risk_register.md](evidence/02_mission_reqs/risk_register.md) |
+| Definitions | [definitions.md](evidence/02_mission_reqs/definitions.md) |
+| Design tokens | [tokens.md](design_system/tokens.md) |
+| Submission index | [SUBMISSIONS.md](SUBMISSIONS.md) |
+| After action review | [after_action_review.md](evidence/04_after_action/after_action_review.md) |
+| References | [REFERENCES.md](REFERENCES.md) |
+| Security policy | [SECURITY.md](SECURITY.md) |
+| Citation | [CITATION.cff](CITATION.cff) |
+| Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 ## License
 

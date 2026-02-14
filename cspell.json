@@ -17,6 +17,7 @@
     "dist",
     "submissions/*.pdf",
     "assets/img/**/*.png",
-    "design_system/tokens.json"
+    "design_system/tokens.json",
+    ".github/ISSUE_TEMPLATE/*.md"
   ]
 }

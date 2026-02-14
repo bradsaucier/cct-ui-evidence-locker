@@ -12,4 +12,3 @@ Repository upgraded to integrate Project Two (Kiva), expand traceability, and im
 4. Added Kiva requirements, user needs summary, and Kiva risk entries.
 5. Added CITATION.cff and SECURITY.md for portfolio professionalism.
 6. Updated root README triage order and artifact inventory for two-project navigation.
-

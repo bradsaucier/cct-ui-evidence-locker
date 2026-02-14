@@ -2,19 +2,20 @@
 
 ## Mission result
 
-Repository upgraded to reduce duplication, improve recruiter scan speed, and increase visual impact without leaving CS-319 scope.
+Repository upgraded to integrate Project Two (Kiva), expand the evidence locker scope beyond Project One (SafeHaven), and improve first-glance review speed without leaving CS-319 scope.
 
 ## Changes executed
 
-1. README navigation strip consolidated to one line
-2. Triage section added as the recruiter start point
-3. Mermaid diagrams corrected for GitHub rendering
-4. Definitions centralized and referenced from critique and platform notes
-5. Project Two placeholders merged into a single scaffold
-6. CI workflows hardened with concurrency and robust globs
+1. Integrated Project Two artifacts (PDF report and borrower wireframe image).
+2. Replaced the Project Two scaffold with an operational index and constraint-driven rationale.
+3. Expanded traceability to include Kiva requirements and evidence.
+4. Added Kiva requirements, user needs summary, and Kiva risk entries.
+5. Added CITATION.cff and SECURITY.md for portfolio professionalism.
+6. Updated root README triage order and artifact inventory for two-project navigation.
 
 ## Next iteration targets
 
-1. Replace workflow badge URLs if repository name differs from the recommended name
-2. Validate Mermaid rendering directly on GitHub after upload
-3. Review alt text and contrast assumptions with a formal accessibility pass
+1. If the repository is renamed, update the two GitHub Actions badge URLs in README.md.
+2. Run a local cspell pass after any major wording changes to preserve strict spell discipline.
+3. Expand Kiva wireframe set if additional screens are developed (confirmation, error states, SMS receipt).
+

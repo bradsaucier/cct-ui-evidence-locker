@@ -51,6 +51,19 @@ This portfolio emphasizes WCAG 2.2 alignment, with special attention to target s
 | Contrast | 4.5:1 for normal text | Use semantic color roles and keylines |
 | Interaction clarity | Visible affordances | Avoid ambiguity under cognitive load |
 
+
+
+## 7. Austere interaction doctrine (USSD)
+
+USSD is session-based and time-bounded. The interface must treat keystrokes and screens as scarce resources.
+
+| Principle | Intent |
+| --- | --- |
+| Critical-data-first | Put the highest value information on the first screen |
+| Flat navigation | Avoid deep menus that increase timeout risk |
+| Confirmation for high-impact actions | Echo-back numeric entry before commit |
+| Data honesty | Label derived values as estimates when history is not available |
+
 ## 6. External reference links
 
 | Name | Link |
@@ -59,3 +72,4 @@ This portfolio emphasizes WCAG 2.2 alignment, with special attention to target s
 | Apple HIG | <https://developer.apple.com/design/human-interface-guidelines/> |
 | Material Design 3 | <https://m3.material.io/> |
 | Wear OS | <https://developer.android.com/training/wearables> |
+| USSD (overview) | <https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data> |

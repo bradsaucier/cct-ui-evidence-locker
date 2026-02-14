@@ -1,4 +1,4 @@
-# CS-319 UI-UX Evidence Locker - SafeHaven (Project One)
+# CS-319 UI-UX Evidence Locker - SafeHaven (Project One) and Kiva (Project Two)
 
 <p align="center">
   <img src="assets/img/cover.png" alt="SafeHaven wireframes and operational dashboard" width="1000">
@@ -15,45 +15,32 @@
     <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow">
   </a>
   <img alt="Repo Type" src="https://img.shields.io/badge/Repo%20Type-documentation--first-informational">
-  <img alt="Standards" src="https://img.shields.io/badge/Standards-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-informational">
+  <img alt="Design Doctrine" src="https://img.shields.io/badge/Design%20Doctrine-WCAG%202.2%20%7C%20HIG%20%7C%20Material%203-informational">
 </p>
 
-<p align="center">
-  <a href="#mission-abstract">Mission Abstract</a> |
-  <a href="#triage-rapid-assessment">Triage</a> |
-  <a href="#artifact-inventory">Artifact Inventory</a> |
-  <a href="#operational-model-safety-critical-ux">Operational Model</a> |
-  <a href="#system-models">System Models</a> |
-  <a href="#verification-protocol">Verification</a> |
-  <a href="#key-competencies-demonstrated">Competencies</a> |
-  <a href="#appendix-repository-map">Appendix</a> |
-  <a href="#personnel">Personnel</a> |
-  <a href="#academic-integrity">Academic Integrity</a>
-</p>
+SafeHaven is a caregiver safety concept for dementia support. The high-consequence scenarios are a wandering event beyond a safe boundary and a stove left on long enough to create fire risk.
 
----
+Kiva is a dual-interface concept where a borrower uses an embedded USSD workflow under low bandwidth and session timeouts, while a lender uses a cloud dashboard for discovery and forecasting under nonprofit cost discipline.
 
-## Mission Abstract
-
-SafeHaven is a caregiver safety concept for dementia support. The UI prioritizes situational awareness and speed to action for two time-critical hazards: wandering outside a safe boundary and a stove left on long enough to create fire risk.
-
-This repository is a documentation-first evidence locker for SNHU CS-319. It preserves an auditable trail from user needs to wireframes, rationale, requirements, risk assessment, and platform adaptation.
+This repository is a documentation-first evidence locker for SNHU CS-319. It consolidates wireframes, requirements, risk assessment, and platform adaptation into an auditable briefing package.
 
 ---
 
 ## Triage (Rapid Assessment)
 
-> Reviewer start point - complete this checklist in order for fastest audit.
+Reviewer start point - complete this checklist in order for fastest audit.
 
 | Order | File | Why it matters |
 | --- | --- | --- |
 | 1 | TRACEABILITY_MATRIX.md | Fast audit map from competencies and requirements to evidence |
-| 2 | evidence/03_ops_design/project_one_safehaven/wireframes.md | Wireframe intent and file index |
-| 3 | evidence/03_ops_design/project_one_safehaven/design_rationale_from_submission.md | Submitted design rationale (Project One) |
-| 4 | evidence/03_ops_design/project_one_safehaven/critique.md | Safety-critical critique and fix list |
-| 5 | evidence/02_mission_reqs/requirements.md | Testable UI requirements |
-| 6 | evidence/02_mission_reqs/risk_register.md | Hazards, mitigations, residual risk |
-| 7 | evidence/03_ops_design/project_one_safehaven/platform_adaptation.md | Watch and kiosk doctrine |
+| 2 | evidence/03_ops_design/project_one_safehaven/wireframes.md | SafeHaven wireframe intent and file index |
+| 3 | evidence/03_ops_design/project_two_kiva/README.md | Kiva USSD borrower flow and lender cloud recommendation |
+| 4 | evidence/03_ops_design/project_one_safehaven/design_rationale_from_submission.md | SafeHaven written rationale (Project One) |
+| 5 | submissions/CS319_Project_Two_Report.pdf | Kiva written report (Project Two) |
+| 6 | evidence/02_mission_reqs/requirements.md | SafeHaven testable UI requirements |
+| 7 | evidence/02_mission_reqs/requirements_kiva.md | Kiva testable UI requirements |
+| 8 | evidence/02_mission_reqs/risk_register.md | Hazards, mitigations, and residual risk for both projects |
+| 9 | evidence/03_ops_design/project_one_safehaven/platform_adaptation.md | Watch and kiosk doctrine |
 
 ---
 
@@ -62,156 +49,78 @@ This repository is a documentation-first evidence locker for SNHU CS-319. It pre
 | Category | Artifact | Purpose | Status |
 | --- | --- | --- | --- |
 | Briefing | README.md | Executive briefing and review order | Complete |
-| Traceability | TRACEABILITY_MATRIX.md | Map competencies, rubric, requirements to evidence | Complete |
+| Traceability | TRACEABILITY_MATRIX.md | Map competencies and requirements to evidence | Complete |
 | Submission record | SUBMISSIONS.md | Submitted vs portfolio enhancements separation | Complete |
-| Wireframes | assets/img/wireframes/ | Digital wireframes for Project One | Complete |
-| Rationale | submissions/CS319_Project_One_Submission.pdf | Submitted narrative rationale | Complete |
-| Requirements | evidence/02_mission_reqs/requirements.md | Testable UI requirements | Complete |
-| Definitions | evidence/02_mission_reqs/definitions.md | Central models and terminology | Complete |
-| Risk register | evidence/02_mission_reqs/risk_register.md | Risk assessment and mitigations | Complete |
-| Critique | evidence/03_ops_design/project_one_safehaven/critique.md | Screen-by-screen safety critique | Complete |
-| Platform adaptation | evidence/03_ops_design/project_one_safehaven/platform_adaptation.md | Watch and kiosk recommendations | Complete |
-| Project Two scaffold | evidence/03_ops_design/project_two_kiva/README.md | Planned work, not started | Planned |
-| Optional mock | src/prototypes/ | Closed-loop interaction demonstration | Optional |
+| Wireframes (SafeHaven) | assets/img/wireframes/ | Digital wireframes for Project One | Complete |
+| Wireframe (Kiva) | assets/img/wireframes/kiva/ | Borrower USSD wireframe for Project Two | Complete |
+| SafeHaven execution package | evidence/03_ops_design/project_one_safehaven/ | Wireframes, critique, and platform adaptations | Complete |
+| Kiva execution package | evidence/03_ops_design/project_two_kiva/ | USSD flow, constraints, and lender cloud recommendation | Complete |
+| Mission requirements | evidence/02_mission_reqs/ | Requirements, definitions, and risk registers | Complete |
+| Research and user needs | evidence/01_intel_research/ | User needs framing for both projects | Complete |
+| Prototype (optional) | src/prototypes/ | Closed-loop UI mock used for demonstration only | Complete |
 
 ---
 
-## Wireframes
+## Wireframes (SafeHaven)
 
 <table>
   <tr>
     <td align="center">
       <strong>Care Circle Setup</strong><br/>
-      <img src="assets/img/wireframes/care_circle_setup.png" alt="Wireframe showing primary and backup caregiver contact hierarchy with escalation timer configuration" width="240"/>
+      <img src="assets/img/wireframes/care_circle_setup.png" alt="Care Circle Setup wireframe showing contacts, escalation timer, and confirm flow" width="240"/>
     </td>
     <td align="center">
       <strong>Home Status Dashboard</strong><br/>
-      <img src="assets/img/wireframes/home_status_dashboard.png" alt="Wireframe showing single pane dashboard with three-state status, last updated time, and priority tiles for wandering, wearable, and stove" width="240"/>
+      <img src="assets/img/wireframes/home_status_dashboard.png" alt="Home Status Dashboard wireframe showing priority tiles for wandering, wearable, and stove" width="240"/>
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Stove Risk Alert</strong><br/>
-      <img src="assets/img/wireframes/stove_risk_alert.png" alt="Wireframe showing critical stove alert with no-motion context, call and mark cooking actions, and press-and-hold emergency shutoff control" width="240"/>
+      <img src="assets/img/wireframes/stove_risk_alert.png" alt="Stove Risk Alert wireframe showing alert, cooking actions, and press-and-hold emergency shutoff control" width="240"/>
     </td>
     <td align="center">
       <strong>Wandering Alert</strong><br/>
-      <img src="assets/img/wireframes/wandering_alert.png" alt="Wireframe showing critical wandering alert with map preview, distance from home, navigate and call actions, and mark safe resolution control" width="240"/>
+      <img src="assets/img/wireframes/wandering_alert.png" alt="Wandering Alert wireframe showing map alert, navigate and call actions, and mark safe resolution control" width="240"/>
     </td>
   </tr>
 </table>
 
 ---
 
-## Operational Model (Safety-Critical UX)
+## Wireframe (Kiva - Embedded USSD)
+
+<p align="center">
+  <img src="assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png" alt="Kiva borrower embedded USSD wireframe showing entry screen and payment schedule screen" width="900"/>
+</p>
+
+---
+
+## Operational Model (Safety-Critical UX - SafeHaven)
 
 1. Context - Caregivers operate under fatigue, stress, and time pressure.
 2. Priority - Situational awareness, error prevention, speed to action.
-3. Core doctrine - Three-state status, closed-loop confirmation, data freshness discipline, double coding. See evidence/02_mission_reqs/definitions.md.
-4. Failure philosophy - Ambiguity is the most dangerous state. See evidence/02_mission_reqs/risk_register.md.
-5. Scope discipline - This repo remains within CS-319 deliverables and portfolio packaging. See SUBMISSIONS.md.
+3. Core doctrine - Three-state status, closed-loop confirmation, explicit data freshness treatment.
+4. Failure modes - stale status, mis-taps, alert fatigue, unverified actuator changes.
+5. Mitigations - discrete status taxonomy, intentional friction for high-impact actions, and verification states.
+
+See evidence/02_mission_reqs/definitions.md and evidence/02_mission_reqs/risk_register.md.
 
 ---
 
-## System Models
+## Operational Model (Austere UX - Kiva)
 
-### Model 1 - Escalation Flow (Role-Based Failover)
+1. Context - USSD is session-based under low bandwidth and session timeout pressure.
+2. Priority - critical-data-first entry screen, shallow navigation, minimal keystrokes.
+3. Core doctrine - echo-back confirmation for numeric entry and end-to-end "EST" labeling when repayment history is unavailable.
+4. Failure modes - session drop during payment, mis-keyed amounts, false precision from derived progress.
+5. Mitigations - two-screen architecture, SMS summary as a receipt, and strict label integrity across edge and cloud views.
 
-```mermaid
-flowchart TD
-  E[Event detected] --> P[Alert primary caregiver]
-  P --> A{Acknowledged within threshold?}
-  A -- Yes --> C[Close event and log resolver]
-  A -- No --> B[Escalate to backup caregiver]
-  B --> L[Log escalation and start retry timer]
-  L --> R{Resolved?}
-  R -- Yes --> C
-  R -- No --> S[Repeat escalation policy]
-```
-
-### Model 2 - Data Freshness Degradation Model
-
-```mermaid
-stateDiagram-v2
-  [*] --> Fresh
-  Fresh --> Degraded: updates late
-  Degraded --> Stale: threshold exceeded
-  Stale --> Lost: heartbeat missing
-  Lost --> Fresh: connectivity restored
-  Degraded --> Fresh: updates resume
-  Stale --> Degraded: updates resume
-```
-
-### Model 3 - Closed-Loop Confirmation States
-
-```mermaid
-stateDiagram-v2
-  [*] --> Idle
-  Idle --> CommandInitiated: press-and-hold completes
-  CommandInitiated --> PendingAck: command sent
-  PendingAck --> Verified: device confirms state
-  PendingAck --> Fault: timeout or error
-  Fault --> CommandInitiated: retry
-  Verified --> Idle: event resolved
-```
+See evidence/03_ops_design/project_two_kiva/README.md, evidence/02_mission_reqs/requirements_kiva.md, and submissions/CS319_Project_Two_Report.pdf.
 
 ---
 
-## Verification Protocol
-
-Quality is enforced through GitHub Actions.
-
-| Control | Workflow | Purpose |
-| --- | --- | --- |
-| Markdown linting | .github/workflows/quality.yml | Structure, headers, and markdown hygiene |
-| Spell checking | .github/workflows/quality.yml | Reduce errors and maintain vocabulary discipline |
-| Link integrity | .github/workflows/links.yml | Prevent link rot in portfolio documentation |
-
-Local execution is optional. CI is the source of truth.
-
----
-
-## Key Competencies Demonstrated
-
-| Competency | Evidence |
-| --- | --- |
-| Analyze UI-UX fundamentals | evidence/02_mission_reqs/definitions.md |
-| Mobile and touch-based UI-UX | evidence/03_ops_design/project_one_safehaven/wireframes.md |
-| Embedded and cloud UI-UX planning | evidence/03_ops_design/project_two_kiva/README.md |
-
----
-
-## Appendix Repository Map
-
-```text
-cs319-safehaven-mission-assurance/
-  .github/
-    ISSUE_TEMPLATE/
-    workflows/
-  assets/
-    img/
-      cover.png
-      wireframes/
-  design_system/
-  evidence/
-    01_intel_research/
-    02_mission_reqs/
-    03_ops_design/
-      project_one_safehaven/
-      project_two_kiva/
-    04_after_action/
-  src/
-    prototypes/
-  submissions/
-  README.md
-  TRACEABILITY_MATRIX.md
-  SUBMISSIONS.md
-  REFERENCES.md
-```
-
----
-
-## Personnel
+## Operator Profile
 
 | Field | Value |
 | --- | --- |
@@ -226,4 +135,4 @@ cs319-safehaven-mission-assurance/
 
 This repository contains coursework artifacts produced for SNHU CS-319 and repackaged for portfolio review. All work is my own.
 
-If any portion is reused, cite the repository and distinguish original content from derived material.
+If any portion is reused, cite the repository and distinguish original content from derived material. See CITATION.cff.

@@ -2,7 +2,7 @@
 
 ## Mission result
 
-Repository upgraded to integrate Project Two (Kiva), expand the evidence locker scope beyond Project One (SafeHaven), and improve first-glance review speed without leaving CS-319 scope.
+Repository upgraded to integrate Project Two (Kiva), expand traceability, and improve first-glance review speed without leaving CS-319 scope.
 
 ## Changes executed
 
@@ -12,10 +12,4 @@ Repository upgraded to integrate Project Two (Kiva), expand the evidence locker 
 4. Added Kiva requirements, user needs summary, and Kiva risk entries.
 5. Added CITATION.cff and SECURITY.md for portfolio professionalism.
 6. Updated root README triage order and artifact inventory for two-project navigation.
-
-## Next iteration targets
-
-1. If the repository is renamed, update the two GitHub Actions badge URLs in README.md.
-2. Run a local cspell pass after any major wording changes to preserve strict spell discipline.
-3. Expand Kiva wireframe set if additional screens are developed (confirmation, error states, SMS receipt).
 

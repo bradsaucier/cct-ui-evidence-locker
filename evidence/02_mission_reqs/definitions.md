@@ -14,34 +14,29 @@ The most dangerous failure mode is "green" status based on stale data.
 
 | Freshness state | Trigger | UI treatment |
 | --- | --- | --- |
-| Fresh | Updates within expected cadence | Normal status rendering |
-| Degraded | Updates late but still arriving | Caution with timestamp emphasis |
-| Stale | Threshold exceeded | Caution to critical escalation, show stale data |
-| Lost | Heartbeat missing | Connection lost warning, suppress false safe claims |
+| Fresh | Most recent expected update received | Normal display |
+| Degraded | Update delayed beyond expected interval | Visible stale indicator and reduced confidence cues |
+| Stale | Update missing beyond maximum tolerance | Escalate to caution and prompt verification action |
 
-Recommended thresholds should be tuned to the sensor update cadence. For this portfolio, a 5 minute stale threshold is used as an illustrative baseline.
+## 3. Closed-loop confirmation
 
-## 3. Closed-loop confirmation states
+A closed-loop action requires an explicit confirmation step that echoes the operator input before committing a high-impact change.
 
-Closed-loop means the UI distinguishes command sent from state verified.
+Examples:
 
-| State | Meaning | Example |
-| --- | --- | --- |
-| Command initiated | User input confirmed | Press-and-hold completes |
-| Pending acknowledgement | Request sent, awaiting confirm | Remote shutoff command in transit |
-| Verified | Device reports state change | Stove reports OFF |
-| Fault | Confirm not received | Timeout, comms loss, actuator failure |
+- Press-and-hold for destructive actions
+- Echo-back confirmation for numeric entry (USSD)
 
-## 4. Alert and interruption taxonomy
+## 4. Estimate labeling doctrine ("EST")
 
-| Class | Definition | Interaction model | Objective |
-| --- | --- | --- | --- |
-| Informational | Passive state update | Non-blocking | Awareness |
-| Toast | Feedback after user action | Auto-dismiss | Close the loop |
-| Notification | Asynchronous external event | Persistent until cleared | Awareness with recall |
-| Confirmation | Destructive or irreversible action | Blocking | Error prevention |
+When repayment transaction history is unavailable, any derived repayment metric is labeled "EST" to prevent false precision.
 
-## 5. Accessibility baseline (WCAG 2.2 focus)
+Rules:
+
+- If a value is estimated at the edge, it remains estimated at every downstream view.
+- If an estimate is shown, label it consistently across borrower and lender views.
+
+## 5. Accessibility intent
 
 This portfolio emphasizes WCAG 2.2 alignment, with special attention to target size.
 
@@ -51,7 +46,15 @@ This portfolio emphasizes WCAG 2.2 alignment, with special attention to target s
 | Contrast | 4.5:1 for normal text | Use semantic color roles and keylines |
 | Interaction clarity | Visible affordances | Avoid ambiguity under cognitive load |
 
+## 6. External reference links
 
+| Name | Link |
+| --- | --- |
+| WCAG 2.2 | <https://www.w3.org/TR/WCAG22/> |
+| Apple HIG | <https://developer.apple.com/design/human-interface-guidelines/> |
+| Material Design 3 | <https://m3.material.io/> |
+| Wear OS | <https://developer.android.com/training/wearables> |
+| USSD (overview) | <https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data> |
 
 ## 7. Austere interaction doctrine (USSD)
 
@@ -63,13 +66,3 @@ USSD is session-based and time-bounded. The interface must treat keystrokes and 
 | Flat navigation | Avoid deep menus that increase timeout risk |
 | Confirmation for high-impact actions | Echo-back numeric entry before commit |
 | Data honesty | Label derived values as estimates when history is not available |
-
-## 6. External reference links
-
-| Name | Link |
-| --- | --- |
-| WCAG 2.2 | <https://www.w3.org/TR/WCAG22/> |
-| Apple HIG | <https://developer.apple.com/design/human-interface-guidelines/> |
-| Material Design 3 | <https://m3.material.io/> |
-| Wear OS | <https://developer.android.com/training/wearables> |
-| USSD (overview) | <https://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data> |

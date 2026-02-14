@@ -2,11 +2,12 @@
 
 ## Scope
 
-This repository contains documentation, wireframes, and a static HTML prototype used for portfolio demonstration. No production service is deployed from this repository.
+This repository contains documentation, wireframes, and a small proof-of-concept UI demonstration. No production service is deployed from this repository.
 
 ## Reporting
 
-If you identify an issue that could cause operator error, privacy exposure, or misleading data presentation in the documented concepts, open a GitHub issue with:
+If you identify an issue that could cause operator error, privacy risk, or misleading data presentation in the documented concepts, open a GitHub issue with:
+
 - A clear description of the failure mode
 - Reproduction steps (if applicable)
 - Suggested mitigation

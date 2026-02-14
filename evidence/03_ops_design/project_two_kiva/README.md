@@ -9,7 +9,7 @@ This project demonstrates UI-UX design for a shared dataset across two fundament
 1. Borrower interface - embedded USSD workflow optimized for low bandwidth, session timeouts, and numeric-only input.
 2. Lender interface - cloud application optimized for exploration, portfolio visibility, and forecasting under nonprofit cost discipline.
 
-Primary dataset constraint: repayment transaction history is not available. Repayment progress therefore relies on interval and term as proxies. All derived repayment outputs are labeled "EST" (estimate) to preserve data honesty.
+Primary dataset constraint: repayment transaction history is not available to the borrower interface. Derived repayment outputs are labeled "EST" (estimate) to preserve data honesty.
 
 ## 2. Artifacts
 
@@ -20,7 +20,7 @@ Primary dataset constraint: repayment transaction history is not available. Repa
 
 ## 3. Borrower - Embedded USSD (Austere Environment)
 
-USSD is menu-driven and session-based. Every additional screen and keystroke increases timeout risk. The design therefore enforces a two-screen architecture.
+USSD is menu-driven and session-based. Every additional screen increases dropout risk. The design therefore enforces a two-screen architecture.
 
 ### 3.1 Screen 1 - Situation awareness and directive
 
@@ -28,10 +28,11 @@ Screen 1 presents critical information at entry to reduce navigation and cogniti
 
 | Field | Rationale |
 | --- | --- |
-| Group (GRP) | Context confirmation to reduce wrong-account actions in shared or group lending scenarios |
-| Status | High-level state indicator |
-| Next action (NEXT) | Imperative directive that replaces raw system states with a single actionable instruction |
-| Interval and term | Planning proxies required when repayment history is not available |
+| Group (GRP) | Context check to reduce wrong-account actions |
+| Status | Simple state indicator (Active, Past Due, etc.) |
+| Next action | Command-style directive ("Pay by") to reduce interpretation burden |
+| Interval | Planning handle for irregular income (monthly, weekly) |
+| Term | Planning handle and schedule proxy (12 mo, 6 mo) |
 | Loan ID | Anchor for support, dispute resolution, and receipts |
 
 ### 3.2 Screen 2 - Execution and payment entry
@@ -39,6 +40,7 @@ Screen 1 presents critical information at entry to reduce navigation and cogniti
 Screen 2 contains the only high-stakes action: entering and confirming a payment amount.
 
 Execution controls:
+
 1. Numeric entry only, optimized for feature phone keypad.
 2. Echo-back confirmation before commit to reduce mis-keyed payments.
 3. "EST" labeling applied to derived values when confirmations are not possible from the dataset.
@@ -46,21 +48,25 @@ Execution controls:
 ### 3.3 Resilience and privacy controls
 
 Resilience:
+
 - If the session drops, an SMS summary provides continuity and a receipt without requiring an immediate reconnect.
 
 Privacy:
+
 - A fast exit option supports shared-device reality and reduces exposure to the next handset user.
 
 ## 4. Lender - Cloud System Recommendation (Strategic View)
 
-The lender dashboard should lead with verifiable terms and stated loan purpose, not curated narratives. Forecast and progress views must preserve the same "EST" discipline used on the borrower side.
+The lender dashboard should lead with verifiable terms and preserve the same "EST" discipline used on the borrower side.
 
 Recommended core modules (screens):
+
 1. Marketplace discovery - search and filters across sector, activity, country, loan use, amount, and status.
 2. Portfolio dashboard - allocation breakdowns (sector, country, activity, repayment interval, status) built from precomputed aggregates.
 3. Loan detail and recycling forecast - terms, status, and estimate-labeled repayment progress.
 
 Architecture recommendation (cost discipline):
+
 1. Ingestion - pull raw snapshots from the platform feed.
 2. Transform - normalize fields used for aggregation (sector, country, activity, use, term, interval).
 3. Data store - index on aggregation drivers first.

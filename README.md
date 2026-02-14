@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml">
-    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main">
+  <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml">
+    <img alt="Quality Gate" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/quality.yml/badge.svg?branch=main">
   </a>
-  <a href="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml">
-    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-safehaven-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main">
+  <a href="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml">
+    <img alt="Link Integrity" src="https://github.com/bradsaucier/cct-ui-evidence-locker/actions/workflows/links.yml/badge.svg?branch=main">
   </a>
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow">

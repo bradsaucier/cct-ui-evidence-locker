@@ -28,7 +28,7 @@ SafeHaven (Project One) - Kiva (Project Two)
 > Explicit constraints and failure modes.<br>
 > Estimates marked "EST" when data is incomplete.<br>
 > Requirement-to-evidence traceability is treated as a first-class deliverable.
-
+<!-- -->
 > [!TIP]
 > **EVALUATOR FAST PATH**
 > <table>
@@ -40,7 +40,6 @@ SafeHaven (Project One) - Kiva (Project Two)
 > <tr><td>Local prototype (HTML)</td><td><a href="src/prototypes/safehaven-ui-mock.html">safehaven-ui-mock.html</a></td><td>Open locally in a browser</td></tr>
 > <tr><td>Prototype notes</td><td><a href="src/prototypes/README.md">src/prototypes/README.md</a></td><td>Scenarios and interaction notes</td></tr>
 > </table>
-
 <details>
 <summary><strong>Operational dossier</strong> (expand)</summary>
 
@@ -230,11 +229,10 @@ Local-only prototype for SafeHaven.
 > Traceability matrix: [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md).<br>
 > Submission index: [SUBMISSIONS.md](SUBMISSIONS.md).<br>
 > Risk register: [risk_register.md](evidence/02_mission_reqs/risk_register.md).
-
+<!-- -->
 > [!WARNING]
 > **SCOPE BOUNDARY**<br>
 > This repository is UI-UX evidence. It intentionally does not implement a backend. Verification focuses on documentation integrity, traceability, and prototype behavior.
-
 ---
 
 ## Evidence index

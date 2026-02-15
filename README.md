@@ -20,12 +20,10 @@ SafeHaven (Project One) - Kiva (Project Two)
 
 > [!IMPORTANT]
 > **BOTTOM LINE UP FRONT**
-> This repository is a documentation-first UI-UX evidence locker built for portfolio review.<br>
-> <br>
+> This repository is a documentation-first UI-UX evidence locker built for portfolio review.<br><br>
 > Operational framing:<br>
 > Operation SafeHaven - safety-critical caregiver interface designed for high stress and time compression.<br>
-> Operation Kiva - austere USSD borrower flow (Edge) paired with a cloud lender dashboard (Core) under cost and latency discipline.<br>
-> <br>
+> Operation Kiva - austere USSD borrower flow (Edge) paired with a cloud lender dashboard (Core) under cost and latency discipline.<br><br>
 > Engineering posture:<br>
 > Explicit constraints and failure modes.<br>
 > Estimates marked "EST" when data is incomplete.<br>
@@ -33,7 +31,6 @@ SafeHaven (Project One) - Kiva (Project Two)
 
 > [!TIP]
 > **EVALUATOR FAST PATH**
->
 > | Target | Link | Notes |
 > | --- | --- | --- |
 > | Project One submission (PDF) | [CS319_Project_One_Submission.pdf](submissions/CS319_Project_One_Submission.pdf) | SafeHaven deliverable package |
@@ -228,15 +225,13 @@ Local-only prototype for SafeHaven.
 
 > [!TIP]
 > **HOW TO VERIFY**
->
-> - CI badges at the top of this README reflect current automated checks.
-> - Open [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) for requirement-to-evidence mapping.
-> - Use [SUBMISSIONS.md](SUBMISSIONS.md) to jump to graded artifacts quickly.
-> - Review [risk_register.md](evidence/02_mission_reqs/risk_register.md) for identified hazards and controls.
->
+> CI badges at the top of this README reflect current automated checks.<br>
+> Open [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) for requirement-to-evidence mapping.<br>
+> Use [SUBMISSIONS.md](SUBMISSIONS.md) to jump to graded artifacts quickly.<br>
+> Review [risk_register.md](evidence/02_mission_reqs/risk_register.md) for identified hazards and controls.
+
 > [!WARNING]
 > **SCOPE BOUNDARY**
->
 > This repository is UI-UX evidence. It intentionally does not implement a backend. Verification focuses on documentation integrity, traceability, and prototype behavior.
 
 ---

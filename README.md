@@ -28,18 +28,19 @@ SafeHaven (Project One) - Kiva (Project Two)
 > Explicit constraints and failure modes.<br>
 > Estimates marked "EST" when data is incomplete.<br>
 > Requirement-to-evidence traceability is treated as a first-class deliverable.
-
+<br>
 > [!TIP]
 > **EVALUATOR FAST PATH**
-> | Target | Link | Notes |
-> | --- | --- | --- |
-> | Project One submission (PDF) | [CS319_Project_One_Submission.pdf](submissions/CS319_Project_One_Submission.pdf) | SafeHaven deliverable package |
-> | Project Two submission (PDF) | [CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf) | Kiva deliverable package |
-> | Traceability matrix | [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) | Requirements mapped to evidence |
-> | Submission index | [SUBMISSIONS.md](SUBMISSIONS.md) | One index for both projects |
-> | Local prototype (HTML) | [safehaven-ui-mock.html](src/prototypes/safehaven-ui-mock.html) | Open locally in a browser |
-> | Prototype notes | [src/prototypes/README.md](src/prototypes/README.md) | Scenarios and interaction notes |
-
+> <table>
+>   <tr><th align="left">Target</th><th align="left">Link</th><th align="left">Notes</th></tr>
+>   <tr><td>Project One submission (PDF)</td><td><a href="submissions/CS319_Project_One_Submission.pdf">CS319_Project_One_Submission.pdf</a></td><td>SafeHaven deliverable package</td></tr>
+>   <tr><td>Project Two submission (PDF)</td><td><a href="submissions/CS319_Project_Two_Report.pdf">CS319_Project_Two_Report.pdf</a></td><td>Kiva deliverable package</td></tr>
+>   <tr><td>Traceability matrix</td><td><a href="TRACEABILITY_MATRIX.md">TRACEABILITY_MATRIX.md</a></td><td>Requirements mapped to evidence</td></tr>
+>   <tr><td>Submission index</td><td><a href="SUBMISSIONS.md">SUBMISSIONS.md</a></td><td>Quick access to graded artifacts</td></tr>
+>   <tr><td>Local prototype (HTML)</td><td><a href="src/prototypes/safehaven-ui-mock.html">safehaven-ui-mock.html</a></td><td>Open locally in a browser</td></tr>
+>   <tr><td>Prototype notes</td><td><a href="src/prototypes/README.md">src/prototypes/README.md</a></td><td>Scenarios and interaction notes</td></tr>
+> </table>
+<br>
 <details>
 <summary><strong>Operational dossier</strong> (expand)</summary>
 
@@ -224,14 +225,14 @@ Local-only prototype for SafeHaven.
 ## Verification and QA
 
 > [!TIP]
-> **HOW TO VERIFY**
+> **HOW TO VERIFY**<br>
 > CI badges at the top of this README reflect current automated checks.<br>
-> Open [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) for requirement-to-evidence mapping.<br>
-> Use [SUBMISSIONS.md](SUBMISSIONS.md) to jump to graded artifacts quickly.<br>
-> Review [risk_register.md](evidence/02_mission_reqs/risk_register.md) for identified hazards and controls.
-
+> Traceability matrix: [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md).<br>
+> Submission index: [SUBMISSIONS.md](SUBMISSIONS.md).<br>
+> Risk register: [risk_register.md](evidence/02_mission_reqs/risk_register.md).
+<br>
 > [!WARNING]
-> **SCOPE BOUNDARY**
+> **SCOPE BOUNDARY**<br>
 > This repository is UI-UX evidence. It intentionally does not implement a backend. Verification focuses on documentation integrity, traceability, and prototype behavior.
 
 ---

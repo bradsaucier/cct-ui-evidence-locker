@@ -24,14 +24,16 @@ SafeHaven (Project One) - Kiva (Project Two)
 > This repository is a documentation-first UI-UX evidence locker built for portfolio review.
 >
 > Operational framing:
+>
 > - **Operation SafeHaven** - safety-critical caregiver interface designed for high stress and time compression.
-> - **Operation Kiva** - austere USSD borrower flow (Edge) plus cloud lender dashboard (Core) under cost and latency discipline.
+> - **Operation Kiva** - austere USSD borrower flow (Edge) paired with a cloud lender dashboard (Core) under cost and latency discipline.
 >
 > Engineering posture:
+>
 > - Explicit constraints and failure modes.
 > - Estimates marked "EST" when data is incomplete.
-> - Requirement to evidence traceability is treated as a first-class deliverable.
-
+> - Requirement-to-evidence traceability is treated as a first-class deliverable.
+>
 > [!TIP]
 > **EVALUATOR FAST PATH**
 >
@@ -89,6 +91,7 @@ LICENSE : MIT
 This course did not require a repository. I built one anyway.
 
 Intent:
+
 - Preserve evidence in a reviewable structure.
 - Translate UI-UX intent into verifiable artifacts.
 - Demonstrate documentation discipline expected in high-reliability environments.
@@ -115,14 +118,14 @@ Intent:
 <tr>
 <td width="50%" valign="top">
 
-**SafeHaven - Home Status Dashboard (three-state model reduces decision time)**
+<p><strong>SafeHaven - Home Status Dashboard</strong><br>three-state model reduces decision time.</p>
 
 <img src="assets/img/wireframes/home_status_dashboard.png" alt="SafeHaven wireframe: home status dashboard with three-state model for at-a-glance caregiver awareness" width="100%">
 
 </td>
 <td width="50%" valign="top">
 
-**SafeHaven - Wandering Alert (high salience, immediate action paths)**
+<p><strong>SafeHaven - Wandering Alert</strong><br>high salience, immediate action paths.</p>
 
 <img src="assets/img/wireframes/wandering_alert.png" alt="SafeHaven wireframe: wandering alert screen emphasizing high salience and immediate action options" width="100%">
 
@@ -131,14 +134,14 @@ Intent:
 <tr>
 <td width="50%" valign="top">
 
-**SafeHaven - Stove Risk Alert (hazard identification plus rapid response)**
+<p><strong>SafeHaven - Stove Risk Alert</strong><br>hazard identification plus rapid response.</p>
 
 <img src="assets/img/wireframes/stove_risk_alert.png" alt="SafeHaven wireframe: stove risk alert with hazard identification and rapid response actions" width="100%">
 
 </td>
 <td width="50%" valign="top">
 
-**Kiva - Borrower USSD Flow (flat menu, numeric input, shared-device privacy)**
+<p><strong>Kiva - Borrower USSD Flow</strong><br>flat menu, numeric input, shared-device privacy.</p>
 
 <img src="assets/img/wireframes/kiva/kiva_borrower_ussd_wireframe.png" alt="Kiva borrower USSD wireframe: flat menu, numeric inputs, short strings, and 0-exit for shared-device privacy" width="100%">
 
@@ -150,13 +153,13 @@ Intent:
 
 ## Operation SafeHaven (Project One)
 
-### Situation
+### Situation - SafeHaven
 
 Operating environment: Residential setting. Operator experiences cognitive load and time pressure during escalations.
 
 Objective: Reduce errors during escalation and preserve privacy during alerts.
 
-### Doctrine
+### Doctrine - SafeHaven
 
 | Hazard | Control | Evidence |
 | --- | --- | --- |
@@ -164,7 +167,7 @@ Objective: Reduce errors during escalation and preserve privacy during alerts.
 | Unattended thermal source (stove-oven) | High salience alert plus immediate response action. | [design_rationale_from_submission.md](evidence/03_ops_design/project_one_safehaven/design_rationale_from_submission.md) |
 | Lock-screen privacy during alerts | Non-descriptive notifications and escalation handling. | [notification_privacy_policy.md](evidence/02_mission_reqs/notification_privacy_policy.md) |
 
-### Execution
+### Execution - SafeHaven
 
 | Phase | Artifact |
 | --- | --- |
@@ -175,7 +178,7 @@ Objective: Reduce errors during escalation and preserve privacy during alerts.
 | Prototype | [safehaven-ui-mock.html](src/prototypes/safehaven-ui-mock.html) |
 | Submission | [CS319_Project_One_Submission.pdf](submissions/CS319_Project_One_Submission.pdf) |
 
-### Evidence package
+### Evidence package - SafeHaven
 
 - [Project One evidence folder](evidence/03_ops_design/project_one_safehaven/)
 - [Project One submission PDF](submissions/CS319_Project_One_Submission.pdf)
@@ -184,13 +187,13 @@ Objective: Reduce errors during escalation and preserve privacy during alerts.
 
 ## Operation Kiva (Project Two)
 
-### Situation
+### Situation - Kiva
 
 Operating environment: Emerging markets. Many borrowers use USSD on shared devices. Lenders view data in the cloud.
 
 Objective: Support borrower repayment planning without transaction history. Provide lender dashboards under cost and latency discipline.
 
-### Doctrine
+### Doctrine - Kiva
 
 | Constraint | Control | Evidence |
 | --- | --- | --- |
@@ -198,7 +201,7 @@ Objective: Support borrower repayment planning without transaction history. Prov
 | Shared-device privacy risk | Minimal identifiers, 0-exit, non-sensitive labels. | [kiva_wireframes.md](evidence/03_ops_design/project_two_kiva/kiva_wireframes.md) |
 | Cloud cost discipline | Aggregations and precomputed metrics. | [kiva_cloud_architecture.md](evidence/03_ops_design/project_two_kiva/kiva_cloud_architecture.md) |
 
-### Execution
+### Execution - Kiva
 
 | Phase | Artifact |
 | --- | --- |
@@ -208,7 +211,7 @@ Objective: Support borrower repayment planning without transaction history. Prov
 | Cloud architecture | [kiva_cloud_architecture.md](evidence/03_ops_design/project_two_kiva/kiva_cloud_architecture.md) |
 | Submission | [CS319_Project_Two_Report.pdf](submissions/CS319_Project_Two_Report.pdf) |
 
-### Evidence package
+### Evidence package - Kiva
 
 - [Project Two evidence folder](evidence/03_ops_design/project_two_kiva/)
 - [Project Two submission PDF](submissions/CS319_Project_Two_Report.pdf)
@@ -233,7 +236,7 @@ Local-only prototype for SafeHaven.
 > - Open [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) for requirement-to-evidence mapping.
 > - Use [SUBMISSIONS.md](SUBMISSIONS.md) to jump to graded artifacts quickly.
 > - Review [risk_register.md](evidence/02_mission_reqs/risk_register.md) for identified hazards and controls.
-
+>
 > [!WARNING]
 > **SCOPE BOUNDARY**
 >

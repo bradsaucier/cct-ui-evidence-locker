@@ -20,18 +20,16 @@ SafeHaven (Project One) - Kiva (Project Two)
 
 > [!IMPORTANT]
 > **BOTTOM LINE UP FRONT**
-> This repository is a documentation-first UI-UX evidence locker built for portfolio review.
->
-> Operational framing:
->
-> - **Operation SafeHaven** - safety-critical caregiver interface designed for high stress and time compression.
-> - **Operation Kiva** - austere USSD borrower flow (Edge) paired with a cloud lender dashboard (Core) under cost and latency discipline.
->
-> Engineering posture:
->
-> - Explicit constraints and failure modes.
-> - Estimates marked "EST" when data is incomplete.
-> - Requirement-to-evidence traceability is treated as a first-class deliverable.
+> This repository is a documentation-first UI-UX evidence locker built for portfolio review.<br>
+> <br>
+> Operational framing:<br>
+> Operation SafeHaven - safety-critical caregiver interface designed for high stress and time compression.<br>
+> Operation Kiva - austere USSD borrower flow (Edge) paired with a cloud lender dashboard (Core) under cost and latency discipline.<br>
+> <br>
+> Engineering posture:<br>
+> Explicit constraints and failure modes.<br>
+> Estimates marked "EST" when data is incomplete.<br>
+> Requirement-to-evidence traceability is treated as a first-class deliverable.
 
 > [!TIP]
 > **EVALUATOR FAST PATH**

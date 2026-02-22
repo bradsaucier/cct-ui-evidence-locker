@@ -1,6 +1,8 @@
 name: "Link Integrity"
 
 on:
+  push:
+    branches: ["main"]
   pull_request:
     branches: ["main"]
   schedule:
@@ -20,16 +22,34 @@ concurrency:
 jobs:
   link-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+      checks: write
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: "Debug - confirm commit and Kiva files exist"
+        run: |
+          echo "GITHUB_SHA=${GITHUB_SHA}"
+          git rev-parse --short HEAD
+          pwd
+          ls -la
+          ls -la evidence/03_ops_design/project_two_kiva || true
+          test -f evidence/03_ops_design/project_two_kiva/kiva_wireframes.md
+          test -f evidence/03_ops_design/project_two_kiva/kiva_cloud_architecture.md
 
       - name: "Run Lychee"
         id: lychee
         uses: lycheeverse/lychee-action@v1.9.0
         continue-on-error: ${{ github.event_name == 'schedule' }}
         with:
-          args: "--config .lychee.toml --verbose --no-progress './**/*.md'"
+          args: --config .lychee.toml --verbose --no-progress ./**/*.md
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
